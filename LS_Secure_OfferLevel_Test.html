@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://secure.latestays.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>A1C1EBz</td>
+	<td>OfferName</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/admin/</td>
+	<td></td>
+</tr>
+<!--Login to SECURE.latestays.com-->
+<tr>
+	<td>type</td>
+	<td>name=LoginName</td>
+	<td>anders</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Password</td>
+	<td>anders01</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=button</td>
+	<td></td>
+</tr>
+<!--Select the hotel-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=header</td>
+	<td>3000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>name=header</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>name=header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForSelectedLabel</td>
+	<td>id=dest_a[1]</td>
+	<td>select</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=dest_a[1]</td>
+	<td>Thailand</td>
+</tr>
+<tr>
+	<td>waitForSelectedLabel</td>
+	<td>id=dest_a[2]</td>
+	<td>select</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=dest_a[2]</td>
+	<td>Phuket</td>
+</tr>
+<tr>
+	<td>waitForSelectedLabel</td>
+	<td>id=HotelID</td>
+	<td>Select Hotel</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=HotelID</td>
+	<td>Cyber Resort and Spa Phuket (1476 Direct)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>subButton</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--Mouseover and Click at 'Offer Level > Add New Offer' to add new offer-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>name=menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#menuOverview &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=#menuOverview &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>css=#menuOverview &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=#menuHotelLevel &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOut</td>
+	<td>css=#menuHotelLevel &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=#menuOfferLevel &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#menuOfferLevel &gt; span &gt; a:nth-child(2)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<!--Enter Information of New Offer-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; div &gt; form &gt; label &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; div &gt; form &gt; div &gt; input[type=&quot;submit&quot;]:nth-child(4)</td>
+	<td></td>
+</tr>
+<!--Select a room type-->
+<tr>
+	<td>type</td>
+	<td>css=#Offer\5b 0\5d \5b roomType\5d</td>
+	<td>Guest</td>
+</tr>
+<!--Select an offer name-->
+<tr>
+	<td>type</td>
+	<td>css=#Offer\5b 0\5d \5b roomName\5d</td>
+	<td>${OfferName}</td>
+</tr>
+<!--Choose an Offer Description-->
+<tr>
+	<td>addSelection</td>
+	<td>//*[@id=&quot;sel1Offer_0[]&quot;]</td>
+	<td>All meals included</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//*[@id=&quot;sel1Offer_0[]&quot;]</td>
+	<td>High tea</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//*[@id=&quot;sel1Offer_0[]&quot;]</td>
+	<td>In-house movies</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//*[@id=&quot;sel1Offer_0[]&quot;]</td>
+	<td>Parking</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//*[@id=&quot;sel1Offer_0[]&quot;]</td>
+	<td>Pool view</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id=&quot;addToDest&quot;]</td>
+	<td></td>
+</tr>
+<!--Remove a selected option-->
+<tr>
+	<td>addSelection</td>
+	<td>//*[@id=&quot;sel2Offer_0[]&quot;]</td>
+	<td>In-house movies</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id=&quot;addToSrc&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@name=&quot;Offer[0][description]&quot;]</td>
+	<td>Near Downtown</td>
+</tr>
+<!--Enter published reate-->
+<tr>
+	<td>type</td>
+	<td>name=Offer[0][pubRate]</td>
+	<td>2000</td>
+</tr>
+<!--Offer includes Breakfast-->
+<tr>
+	<td>click</td>
+	<td>name=Offer[0][inBreakfast]</td>
+	<td></td>
+</tr>
+<!--Minimum night stay-->
+<tr>
+	<td>select</td>
+	<td>name=Offer[0][minNight]</td>
+	<td>2</td>
+</tr>
+<!--Extra bed available (limited to 1 bed per room only) :-->
+<tr>
+	<td>click</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(3) &gt; tbody &gt; tr:nth-child(10) &gt; td:nth-child(2) &gt; input[type=&quot;checkbox&quot;]:nth-child(1)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(3) &gt; tbody &gt; tr:nth-child(10) &gt; td:nth-child(2) &gt; input.small</td>
+	<td>500</td>
+</tr>
+<!--Is airport transfer included free of charge in the offer :-->
+<tr>
+	<td>click</td>
+	<td>name=Offer[0][hasTransfer]</td>
+	<td></td>
+</tr>
+<!--Credit Cards and Seasonal Promotions :-->
+<tr>
+	<td>select</td>
+	<td>name=Offer[0][ccPromotionId]</td>
+	<td>Free Upgrade &amp; Free Breakfast</td>
+</tr>
+<!--Maximum number of adults per room included in the rate :-->
+<tr>
+	<td>select</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(3) &gt; tbody &gt; tr:nth-child(17) &gt; td:nth-child(2) &gt; select</td>
+	<td>1</td>
+</tr>
+<!--Maximum number of children per room without using extra bedding :-->
+<tr>
+	<td>select</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(3) &gt; tbody &gt; tr:nth-child(18) &gt; td:nth-child(2) &gt; select</td>
+	<td>1</td>
+</tr>
+<!--Max. child's age :-->
+<tr>
+	<td>select</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(3) &gt; tbody &gt; tr:nth-child(19) &gt; td:nth-child(2) &gt; select</td>
+	<td>10</td>
+</tr>
+<!--Minimum number of days customer can book before check-in :-->
+<tr>
+	<td>select</td>
+	<td>name=Offer[0][leadtime]</td>
+	<td>15</td>
+</tr>
+<!--Other websites :-->
+<tr>
+	<td>click</td>
+	<td>name=Offer[0][extendedAvailability]</td>
+	<td></td>
+</tr>
+<!--Number of days to be displayed :-->
+<tr>
+	<td>select</td>
+	<td>name=Offer[0][cutoff]</td>
+	<td>60</td>
+</tr>
+<!--Cancellation charge type :-->
+<tr>
+	<td>select</td>
+	<td>name=Offer[0][fullCancellationCharge]</td>
+	<td>Full amount</td>
+</tr>
+<!--Customer Payment Preference-->
+<tr>
+	<td>click</td>
+	<td>//*[@id=&quot;Offer[0][DefaultFullPayment][1]&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id=&quot;Offer[0][DefaultCommission]&quot;]</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(5) &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(4) &gt; img</td>
+	<td></td>
+</tr>
+<!--Supplier Payment Preference-->
+<tr>
+	<td>click</td>
+	<td>id=Offer[0][CreditCardGuarantee][1]</td>
+	<td></td>
+</tr>
+<!--Rates and Allotment :-->
+<tr>
+	<td>click</td>
+	<td>css=#toDate_display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#toDate_display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>/</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>/</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=#toDate_display</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(5) &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(4) &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(5) &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(2) &gt; input</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; table:nth-child(5) &gt; tbody &gt; tr:nth-child(3) &gt; td:nth-child(4) &gt; input[type=&quot;text&quot;]</td>
+	<td>99</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=body &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; form &gt; div &gt; div:nth-child(7) &gt; input</td>
+	<td></td>
+</tr>
+<!--Verify the information after add new offer-->
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//td[@class='okmessage']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@class='okmessage']</td>
+	<td>Added offer Guest - ${OfferName} from * to 30 October 2014</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>main</td>
+	<td></td>
+</tr>
+<!--Verify Value of Added Offer in the "Current Offers Details" table-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[2]/</td>
+	<td>* - 30 Oct, 2014</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[3]/</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[4]/</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[5]/</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[6]/</td>
+	<td>60</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[7]/</td>
+	<td>No</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[8]/</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[9]/</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[3]/tbody/tr[td[b[a[text()='Guest - ${OfferName}']]]]/td[10]/</td>
+	<td>Billing</td>
+</tr>
+<!--Verify Value of Added Offer in the "Rate & Availability Overview for Next 30 Days" table-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//table/tbody/tr[1]/td/form[2]/table/tbody/tr[td[a[b[contains(text(),'Guest - ${OfferName}')]]]]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table/tbody/tr[1]/td/form[2]/table/tbody/tr[td[a[b[contains(text(),'Guest - ${OfferName}')]]]]/td/b/ul/li[1]</td>
+	<td>breakfast is inclusive</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table/tbody/tr[1]/td/form[2]/table/tbody/tr[td[a[b[contains(text(),'Guest - ${OfferName}')]]]]/td/b/ul/li[2]</td>
+	<td>This offer requires a minimum stay of 2 nights</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table/tbody/tr[1]/td/form[2]/table/tbody/tr[td[a[b[contains(text(),'Guest - ${OfferName}')]]]]/td/b/ul/li[3]</td>
+	<td>(Optional) Extra bed price is 500 THB per bed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table/tbody/tr[1]/td/form[2]/table/tbody/tr[td[a[b[contains(text(),'Guest - ${OfferName}')]]]]/td/b/ul/li[4]</td>
+	<td>Airport transfer is free of charge</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i} &lt;= 14</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${i}+1</td>
+	<td>j</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//table/tbody/tr[1]/td/form[2]/table/tbody/tr[td[a[b[contains(text(),'Guest - ${OfferName}')]]]]/td[${j}]/input</td>
+	<td>99</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//table/tbody/tr[1]/td/form[2]/table/tbody/tr[td[a[b[contains(text(),'Guest - ${OfferName}')]]]]/following-sibling::tr[1]/td[${i}]</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${i}+1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
